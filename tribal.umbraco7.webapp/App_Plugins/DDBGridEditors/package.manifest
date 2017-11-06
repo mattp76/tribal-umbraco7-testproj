@@ -1,0 +1,49 @@
+﻿{
+  "gridEditors": [
+    {
+      "name": "Banner",
+      "alias": "banner",
+      "view": "/app_plugins/DDBGridEditors/editors/Banner/banner.html",
+      "render": "/app_plugins/DDBGridEditors/editors/Banner/Banner.cshtml",
+      "icon": "icon-lightbulb-active color-green"
+    },
+    {
+      "name": "Feature Card",
+      "alias": "wordCard",
+      "view": "/app_plugins/DDBGridEditors/editors/FeatureCard/featureCard.html",
+      "render": "/app_plugins/DDBGridEditors/editors/FeatureCard/featureCard.cshtml",
+      "icon": "icon-umb-content color-green"
+    },
+    {
+      "name": "Partner Panel",
+      "alias": "partnerPanel",
+      "view": "/app_plugins/DDBGridEditors/editors/PartnerPanel/partner.html",
+      "render": "/app_plugins/DDBGridEditors/editors/PartnerPanel/PartnerPanel.cshtml",
+      "icon": "icon-user-females color-green"
+    },
+    {
+      "name": "Page Card",
+      "alias": "serviceCard",
+      "view": "/app_plugins/DDBGridEditors/editors/PageCard/pageCard.html",
+      "render": "/app_plugins/DDBGridEditors/editors/PageCard/pageCard.cshtml",
+      "icon": "icon-tools color-green"
+    },
+    {
+      "name": "Navigation",
+      "alias": "navigation",
+      "view": "/app_plugins/DDBGridEditors/editors/Navigation/navigation.html",
+      "render": "/app_plugins/DDBGridEditors/editors/Navigation/navigation.cshtml",
+      "icon": "icon-sitemap color-green"
+    }
+  ],
+  "javascript": [
+    "/App_Plugins/DDBGridEditors/editors/Navigation/navigation.controller.js",
+    "/App_Plugins/DDBGridEditors/editors/Banner/banner.controller.js",
+    "/App_Plugins/DDBGridEditors/editors/FeatureCard/featureCard.controller.js",
+    "/App_Plugins/DDBGridEditors/editors/PartnerPanel/partner.controller.js",
+    "/App_Plugins/DDBGridEditors/editors/PageCard/pageCard.controller.js",
+    "/App_Plugins/DDBGridEditors/directives/uploadImage.directive.js",
+    "/App_Plugins/DDBGridEditors/directives/contentPicker.directive.js",
+    "/App_Plugins/DDBGridEditors/services/documentResource.service.js"
+  ]  
+}

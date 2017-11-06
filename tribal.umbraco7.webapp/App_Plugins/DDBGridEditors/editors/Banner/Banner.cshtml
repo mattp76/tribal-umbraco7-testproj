@@ -1,0 +1,20 @@
+﻿@using GroupWebsite.Web.Helper;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+
+@{
+
+        var test = Model.value;
+
+        if (Model.value != null)
+        {
+            var bannerUrl = Umbraco.TypedMedia(Model.value.background.ToObject<int>()).Url;
+
+        <div class="jumbotron banner_section" style="background-image: url(@bannerUrl)">
+            <div class="container">
+                <h3>@Model.value.header</h3>
+                <h1>@Model.value.shortDesc</h1>
+            </div>
+        </div>
+     }
+}
+

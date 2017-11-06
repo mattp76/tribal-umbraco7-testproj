@@ -1,0 +1,21 @@
+﻿<div class="form-horizontal" ng-controller="ddb.pageCard.controller">
+    <content-picker label="Select grid page" ng-model="control.value"></content-picker>
+
+    <!--Render selected service card-->
+    <div ng-if="documentDetail != undefined && control.value != undefined" class="service-card">        
+        <div class="service-card-container">
+            <div class="service-card-container__logo-container">
+                <img class="service-card-container__logo" ng-src="{{documentDetail.PageCardLogoUrl}}"/>
+            </div>
+            <h2 class="service-card-container__title">
+                {{documentDetail.PageCardTitle}}
+            </h2>
+            <p class="service-card-container__short-description">
+                {{documentDetail.PageCardShortDesc}}
+            </p>
+            <p class="service-card-container__readmore">
+                Read more <span class="icon-arrow-right"></span>
+            </p>
+        </div>
+    </div>
+</div>

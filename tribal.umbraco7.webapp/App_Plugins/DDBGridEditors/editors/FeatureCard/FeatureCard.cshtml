@@ -1,0 +1,37 @@
+﻿@using GroupWebsite.Web.Helper
+
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+@{
+
+    var bgUrl = Model.value.background != null ? Umbraco.TypedMedia(Convert.ToInt16(Model.value.background)).Url : string.Empty;
+    var logoUrl = Model.value.logo != null ? Umbraco.TypedMedia(Convert.ToInt16(Model.value.logo)).Url : string.Empty;
+    var url = string.Empty;
+    if (Model.value.linkNodeId != null) {
+        url =  Umbraco.TypedContent(ExtenstionMethods.ToInteger(Model.value.linkNodeId, 0)).Url;
+    }
+}
+
+@if (!string.IsNullOrEmpty(url))
+{
+    @Html.Raw("<a href=" + url + ">")
+}
+    <div class="workcard-container" style="background-image: url(@bgUrl)">
+        <div class="overlay"></div>
+        <div class="workcard-container__wrapper">
+            <div class="workcard-container__logo">
+                <img src="@logoUrl" alt="logo" />
+            </div>
+            <div class="workcard-container__title-container">
+                <h3 class="workcard-container__title">
+                    @Model.value.title
+                </h3>
+
+                <h2 class="workcard-container__description">
+                    @Model.value.shortDesc
+                </h2>
+            </div>
+        </div>
+    </div>
+@if(!string.IsNullOrEmpty(url)) {
+    @Html.Raw("</a>")
+}

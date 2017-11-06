@@ -1,0 +1,31 @@
+﻿<div class="control-group umb-control-group">
+    <div class="umb-el-wrap">
+        <label class="control-label">
+            {{label}}
+        </label>
+
+        <div class="controls">
+            <div class="umb-property-editor">
+                <div class="umb-editor umb-mediapicker">
+                    <ul class="umb-sortable-thumbnails">
+                        <li style="border: none" ng-if="imageUrl == undefined || imageUrl.length === 0">
+                            <a href="#" class="add-link" ng-click="setImage()" prevent-default="">
+                                <i class="icon icon-add large"></i>
+                            </a>
+                        </li>
+                        <li style="width: 120px; height: 100px; overflow: hidden;" class="ui-sortable-handle" ng-if="imageUrl != undefined && imageUrl.length > 0">
+                            <!-- IMAGE -->
+                            <img ng-src="{{imageUrl}}" alt="" >
+                            <div class="umb-sortable-thumbnails__actions">                                
+                                <a class="umb-sortable-thumbnails__action -red" href="" ng-click="removeImage()">
+                                    <i class="icon icon-delete"></i>
+                                </a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

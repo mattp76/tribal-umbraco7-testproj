@@ -1,0 +1,52 @@
+﻿@using System.Web.Mvc
+@using GroupWebsite.Web.Helper
+@using GroupWebsite.Common.Interfaces
+@using GroupWebsite.Common.Dto
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+
+@{
+    var repo = DependencyResolver.Current.GetService<IContentRepository>();
+    var navigation = repo.GetNavigation(ExtenstionMethods.ToInteger(Model.value, 0));
+
+    List<NavItemDto> items = navigation.MenuItems;
+    var currentNode = navigation.CurrentNode;
+}
+
+
+<nav class="primary-nav">
+    <ul class="nav-items">
+
+        <li class="nav-item">
+            <a href="/">Home</a>
+        </li>
+
+        @foreach (var item in items)
+        {
+            <li class="nav-item">
+                <a href="@item.Url">@item.Name</a>
+                @childPages(item.SubMenuItems)
+            </li>
+        }
+    </ul>
+</nav>
+
+
+@helper childPages(List<SubNavItemDto> subItems)
+{
+if (subItems.Count > 0)
+    {
+        <ul class="nav-items">
+            @foreach (var item in subItems)
+            {
+                <li class="nav-item">
+                    <a href="@item.Url">@item.Name</a>
+                </li>
+            }
+        </ul>
+    }
+}
+
+
+ 
+
+

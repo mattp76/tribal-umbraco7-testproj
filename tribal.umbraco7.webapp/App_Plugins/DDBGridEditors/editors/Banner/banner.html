@@ -1,0 +1,45 @@
+﻿<div class="form-horizontal" ng-controller="ddb.banner.controller">
+    <!--Background image-->
+    <upload-image label="Banner image" ng-model="control.value.background"></upload-image>
+    <!--End Background image-->    
+    <!--Partner name-->
+    <div class="control-group umb-control-group">
+        <div class="umb-el-wrap">
+
+            <label class="control-label" for="header" title="header">
+                Header
+                <small>header text</small>
+            </label>
+
+            <div class="controls">
+
+                <div class="umb-property-editor">
+                    <div>
+                        <input type="text" name="textbox" ng-model="control.value.header" id="header" class="umb-editor umb-textstring textstring">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Partner name-->
+    <!--Short description-->
+    <div class="control-group umb-control-group">
+        <div class="umb-el-wrap">
+
+            <label class="control-label ng-binding" for="shortDesc" title="short description">
+                Description
+                <small>Short description </small>
+            </label>
+
+            <div class="controls">
+
+                <div class="umb-property-editor">
+                    <div>
+                        <textarea name="textbox" ng-model="control.value.shortDesc" id="shortDesc" class="umb-editor umb-textstring"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Partner name-->
+</div> 

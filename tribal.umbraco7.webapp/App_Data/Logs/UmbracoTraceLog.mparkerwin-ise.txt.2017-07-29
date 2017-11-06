@@ -1,0 +1,52 @@
+﻿ 2017-07-29 09:44:38,273 [P9352/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.11 application starting on MPARKERWIN-ISE
+ 2017-07-29 09:44:38,303 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-07-29 09:44:38,315 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 12ms)
+ 2017-07-29 09:44:38,386 [P9352/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-07-29 09:44:38,388 [P9352/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-07-29 09:44:38,397 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-07-29 09:44:40,694 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 2297ms)
+ 2017-07-29 09:44:40,872 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-07-29 09:44:40,874 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2ms)
+ 2017-07-29 09:44:40,875 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-07-29 09:44:40,877 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 2ms)
+ 2017-07-29 09:44:40,904 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-07-29 09:44:40,905 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+ 2017-07-29 09:44:40,906 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-07-29 09:44:40,915 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 9ms)
+ 2017-07-29 09:44:41,161 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-07-29 09:44:41,163 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 1ms)
+ 2017-07-29 09:44:41,163 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-07-29 09:44:41,165 [P9352/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 1ms)
+ 2017-07-29 09:44:43,469 [P9352/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-07-29 09:44:43,958 [P9352/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-07-29 09:44:44,195 [P9352/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-07-29 09:44:44,310 [P9352/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-07-29 09:44:44,352 [P9352/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 6203ms)
+ 2017-07-29 09:44:51,154 [P9352/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://tribal-umbraco7.local:80/umbraco (UmbracoModule request)
+ 2017-07-29 10:07:13,649 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-07-29 10:07:13,649 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-07-29 10:07:13,663 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-07-29 10:07:13,664 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-07-29 10:07:13,664 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-07-29 10:07:13,664 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-07-29 10:07:13,664 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-07-29 10:07:13,664 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-07-29 10:07:13,664 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-07-29 10:07:13,664 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-07-29 10:07:13,664 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-07-29 10:07:13,664 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-07-29 10:07:13,835 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-07-29 10:07:13,835 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-07-29 10:07:13,835 [P9352/D2/T26] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-07-29 10:07:13,837 [P9352/D2/T26] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-07-29 10:07:13,839 [P9352/D2/T26] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-07-29 10:07:43,943 [P9352/D2/T26] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.Hosting.PipelineRuntime.StopProcessing()

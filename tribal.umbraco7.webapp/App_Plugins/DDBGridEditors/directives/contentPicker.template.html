@@ -1,0 +1,32 @@
+﻿<div class="control-group umb-control-group">
+    <div class="umb-el-wrap">
+        <label class="control-label">
+            {{label}}
+        </label>
+
+        <div class="controls">
+            <div class="umb-property-editor">
+                <div class="umb-editor umb-mediapicker"  ng-if="document == undefined || document.length === 0">
+                    <ul class="umb-sortable-thumbnails">
+                        <li style="border: none">
+                            <a href="#" class="add-link" ng-click="setContent()" prevent-default="">
+                                <i class="icon icon-add large"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div ng-if="document != undefined && document.length > 0">
+                    <!-- Document name -->
+                    <p>
+                        <span>{{document}}</span>
+                        <a class="umb-sortable-thumbnails__action color-red" href="" ng-click="removeContent()">
+                            <i class="icon icon-delete color-red"></i> Remove
+                        </a>
+                    </p>        
+                </div>
+            </div>
+        </div>
+               
+    </div>
+</div>

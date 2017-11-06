@@ -1,0 +1,28 @@
+﻿@using System.Web.Mvc
+@using GroupWebsite.Web.Helper
+@using GroupWebsite.Common.Interfaces
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+@{
+    var repo = DependencyResolver.Current.GetService<IContentRepository>();
+    var pageCardItem = repo.GetPageCardContent(ExtenstionMethods.ToInteger(Model.value, 0));
+
+    var url = Umbraco.TypedContent(ExtenstionMethods.ToInteger(Model.value, 0)).UrlName;
+}
+
+
+
+<div class="service-card">
+    <div class="service-card-container">
+        <div class="service-card-container__logo-container">
+            <img class="service-card-container__logo" src="@pageCardItem.PageCard.PageCardLogoUrl" />
+        </div>
+        <h2 class="service-card-container__title">
+            @pageCardItem.PageCard.PageCardTitle
+        </h2>
+        <p class="service-card-container__short-description">
+            @pageCardItem.PageCard.PageCardShortDesc
+        </p>
+        <a class="service-card-container__readmore" href="@url">Read more <span class="glyphicon glyphicon-arrow-right"></span></a>
+
+    </div>
+</div>

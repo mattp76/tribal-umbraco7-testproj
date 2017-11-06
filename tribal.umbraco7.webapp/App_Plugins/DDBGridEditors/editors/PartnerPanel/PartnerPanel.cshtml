@@ -1,0 +1,32 @@
+﻿@using GroupWebsite.Web.Helper
+@using GroupWebsite.Common.ViewModels
+@using GroupWebsite.Common.Interfaces
+@using Newtonsoft.Json.Linq
+@using Umbraco.Core.Models
+@using Umbraco.Web
+@using System.Web.Mvc
+
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+@{
+    if (Model.value.partners != null)
+    {
+        var ids = ((JArray)Model.value.partners).Select(p => p["id"].ToInteger(0)).ToList();
+
+        var repo = DependencyResolver.Current.GetService<IContentRepository>();
+        var partners = repo.GetPartnerContent(ids);
+
+        <h2>@(Model.value.header ?? "Our Partners")</h2>
+        for (var i = 0; i < partners.Partners.Count % 5; i++)
+        {
+            <div class="row">
+                @foreach (var item in partners.Partners.Skip(i * 5).Take(5))
+                {
+                    <div class="col-md-2 col-xs-4">
+                        <img src="@item.PartnerLogo" title="@item.ParterName" alt="@item.ParterName" style="width: 100%;"/>
+                    </div>
+                }
+            </div>
+        }
+
+        }
+}

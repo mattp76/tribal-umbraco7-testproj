@@ -1,0 +1,54 @@
+﻿ 2017-03-15 08:32:49,216 [P11172/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.11 application starting on MPARKERWIN-ISE
+ 2017-03-15 08:32:49,237 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-03-15 08:32:49,246 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 9ms)
+ 2017-03-15 08:32:49,298 [P11172/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-03-15 08:32:49,299 [P11172/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-03-15 08:32:49,305 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-03-15 08:32:49,471 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 166ms)
+ 2017-03-15 08:32:49,620 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-03-15 08:32:49,621 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+ 2017-03-15 08:32:49,622 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-03-15 08:32:49,623 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2017-03-15 08:32:49,640 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-03-15 08:32:49,642 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+ 2017-03-15 08:32:49,642 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-03-15 08:32:49,649 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 6ms)
+ 2017-03-15 08:32:49,841 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-03-15 08:32:49,842 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2017-03-15 08:32:49,842 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-03-15 08:32:49,842 [P11172/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2017-03-15 08:32:51,272 [P11172/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-03-15 08:32:51,563 [P11172/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-03-15 08:32:51,741 [P11172/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-03-15 08:32:51,805 [P11172/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-03-15 08:32:51,833 [P11172/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2705ms)
+ 2017-03-15 08:32:55,969 [P11172/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://tribal-umbraco7.local:80/umbraco (UmbracoModule request)
+ 2017-03-15 08:33:01,799 [P11172/D2/T10] INFO  umbraco.content - Load Xml from file...
+ 2017-03-15 08:33:01,807 [P11172/D2/T10] INFO  umbraco.content - Loaded Xml from file.
+ 2017-03-15 08:33:03,400 [P11172/D2/T10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-03-15 08:33:03,401 [P11172/D2/T10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2017-03-15 08:33:04,238 [P11172/D2/T10] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type Home matches a locally declared controller of type tribal.umbraco7.webapp.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-03-15 08:34:01,872 [P11172/D2/T10] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-14 08:34:01
+ 2017-03-15 08:34:05,943 [P11172/D2/T10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-03-15 08:34:05,944 [P11172/D2/T10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2017-03-15 12:34:02,661 [P11172/D2/T16] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-14 12:34:02
+ 2017-03-15 14:14:44,315 [P11172/D2/T252] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type Home matches a locally declared controller of type tribal.umbraco7.webapp.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-03-15 14:49:40,524 [P11172/D2/T252] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type Home matches a locally declared controller of type tribal.umbraco7.webapp.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-03-15 15:32:29,366 [P11172/D2/T312] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username umbraco from IP address 127.0.0.1
+ 2017-03-15 15:32:39,729 [P11172/D2/T303] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username parker@tribal.com from IP address 127.0.0.1
+ 2017-03-15 15:32:39,729 [P11172/D2/T303] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: parker@tribal.com logged in from IP address 127.0.0.1
+ 2017-03-15 15:32:39,971 [P11172/D2/T323] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-15 15:32:39,973 [P11172/D2/T323] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
+ 2017-03-15 15:32:40,142 [P11172/D2/T303] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2017-03-15 15:32:40,143 [P11172/D2/T303] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 1ms)
+ 2017-03-15 15:32:40,357 [P11172/D2/T303] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-15 15:32:40,357 [P11172/D2/T303] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-03-15 15:32:40,360 [P11172/D2/T303] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-03-15 15:32:40,362 [P11172/D2/T303] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 1ms)
+ 2017-03-15 15:32:40,387 [P11172/D2/T323] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-03-15 15:32:40,389 [P11172/D2/T323] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 2ms)
+ 2017-03-15 15:33:06,154 [P11172/D2/T306] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-03-15 15:35:09,770 [P11172/D2/T317] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2017-03-15 15:52:13,906 [P11172/D2/T246] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: parker@tribal.com, IP Address: 127.0.0.1
+ 2017-03-15 15:52:19,900 [P11172/D2/T24] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: parker@tribal.com, IP Address: 127.0.0.1
+ 2017-03-15 16:24:01,980 [P11172/D2/T108] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type Home matches a locally declared controller of type tribal.umbraco7.webapp.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.

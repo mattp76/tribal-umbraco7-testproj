@@ -1,0 +1,55 @@
+﻿<div class="form-horizontal" ng-controller="ddb.partner.controller">
+    <!--Title-->
+    <div class="control-group umb-control-group">
+        <div class="umb-el-wrap">
+
+            <label class="control-label" for="partnerTitle" title="partner title">
+                Title copy
+                <small>Title copy.</small>
+            </label>
+
+            <div class="controls">
+
+                <div class="umb-property-editor">
+                    <div>
+                        <input type="text" name="textbox" ng-model="control.value.header" id="partnerTitle" class="umb-editor umb-textstring textstring">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Title-->
+    <!--Partner selection-->
+    <div class="control-group umb-control-group">
+        <div class="umb-el-wrap">
+
+            <label class="control-label ng-binding" title="partner list">
+                Partners
+                <small>Partner List</small>
+            </label>
+
+            <div class="controls">
+
+                <div class="umb-property-editor">
+                    <ul class="unstyled list-icons" ng-if="control.value.partners != undefined && control.value.partners.length > 0">
+                        <li ng-repeat="node in control.value.partners" class="ui-sortable-handle" title="">
+                            <a href="#" prevent-default="" ng-click="remove(node)">
+                                <i class="icon icon-delete red hover-show"></i>
+
+                                {{node.name}}
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <a href="#" ng-click="selectPartner($event)">
+                            <i class="icon-edit"></i>
+                            Select partners
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Partner name-->
+</div> 
